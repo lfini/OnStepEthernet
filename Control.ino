@@ -267,7 +267,8 @@ void processControlGet() {
     if (v=="l") Ser.print(":TL#"); // lunar
     if (v=="h") Ser.print(":TS#"); // solar
   }
-  // Refraction Rate Tracking control  v=server.arg("rr");
+  // Refraction Rate Tracking control
+  v=server.arg("rr");              // L.F. Bug corrected
   if (v!="") {
     if (v=="otk") Ser.print(":To#");
     if (v=="on") Ser.print(":Tr#");
